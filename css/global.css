@@ -1,0 +1,25 @@
+/* GLOBALS ------------------------------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-heading: #335576;
+    --clr-accent: #DB7A4E;
+    --clr-bg: #FEFAF5;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #FFF;
+}
+
+
+/* HEADER -------------------------------------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER ------------------------------------------------------- */
