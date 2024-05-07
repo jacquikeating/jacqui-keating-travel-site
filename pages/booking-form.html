@@ -30,36 +30,34 @@
         </header>
 
         <main>
-            <section class="hero">
-                <h1 class="hero__headline">
-                    Travelling Comes With Endless Discoveries
-                </h1>
-                <p class="hero__subtitle">
-                    Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
-                </p>
-                <button class="hero__btn">
-                    <a class="btn__link" href="/pages/booking-form.html">Get started</a>
-                </button>
-            </section>
+           <form class="booking-form">
+                <h1 class="booking-form__title">Start booking a trip</h1>
 
-            <section class="recs">
-                <h2 class="recs__subheading">Recommendations</h2>
-                <div class="recs__cards-container">
+                <label class="booking-form__label">
+                    <select class="booking-form__select" required>
+                        <option class="booking-form__destination-option">Hawaii</option>
+                        <option class="booking-form__destination-option">Iceland</option>
+                        <option class="booking-form__destination-option">Greece</option>
+                    </select>
+                </label>
 
-                    <article class="recs__card">
-                        <p class="recs__deestination-name">Hawaii</p>
-                    </article>
+                <label class="booking-form__label">
+                    <input class="booking-form__input" type="text" placeholder="Enter your name" required >
+                </label>
 
-                    <article class="recs__card">
-                        <p class="recs__deestination-name">Iceland</p>
-                    </article>
+                <label class="booking-form__label">
+                    <input class="booking-form__input" type="email" placeholder="Enter your email address" required>
+                </label>
 
-                    <article class="recs__card">
-                        <p class="recs__deestination-name">Greece</p>
-                    </article>
+                <label class="booking-form__label">
+                    <input class="booking-form__input" type="text" placeholder="Enter your phone number" required>
+                </label>
 
-                </div>
-            </section>
+                <label class="booking-form__label">
+                    <textarea class="booking-form__textarea" placeholder="Enter a message (optional)"></textarea>
+                </label>
+
+           </form>
         </main>
 
         <footer class="footer">
