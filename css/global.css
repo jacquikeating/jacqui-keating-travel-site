@@ -73,9 +73,6 @@ body {
     border: 1px solid var(--clr-shadow);
     border-radius: 5px;
     box-shadow: 0px 4px 4px var(--clr-shadow);
-    background-color: var(--clr-white);
-    background-size: cover;
-    display: flex;
     padding: 1.5rem;
 }
 

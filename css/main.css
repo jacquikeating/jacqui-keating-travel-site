@@ -55,9 +55,19 @@
 
 /* CARDS -------------------------------------------------------- */
 .card {
-    justify-content: flex-end;
-    align-items: flex-end;
     text-decoration: none;
+    position: relative;
+}
+
+.card__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .card__destination-name {
@@ -65,16 +75,7 @@
     font-weight: bold;
     color: #FFF;
     text-align: right;
-}
-
-.card--hawaii {
-    background-image: url("/assets/images/hawaii.jpg");
-}
-
-.card--iceland {
-    background-image: url("/assets/images/iceland.jpg");
-}
-
-.card--greece {
-    background-image: url("/assets/images/greece.jpg");
+    position: absolute;
+    bottom: 20px;
+    left: 195px;
 }

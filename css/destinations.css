@@ -24,7 +24,7 @@
 
 /* CARDS -------------------------------------------------------- */
 .card {
-    flex-direction: column;
+    background-color: var(--clr-white);
 }
 
 .card__title {
