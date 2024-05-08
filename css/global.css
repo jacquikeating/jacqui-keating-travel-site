@@ -2,24 +2,112 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --clr-heading: #335576;
     --clr-accent: #DB7A4E;
     --clr-bg: #FEFAF5;
+    --clr-white: #FFF;
+    --clr-shadow: rgba(0,0,0,0.2);
 }
 
 body {
     font-family: 'Verdana', sans-serif;
-    background-color: #FFF;
+    background-color: var(--clr-white);
+    font-size: 10px;
 }
 
 
-/* HEADER -------------------------------------------------------- */
+/* HEADER ------------------------------------------------------- */
 .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+}
+
+.header__site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--clr-heading);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__item {
+    font-size: 1.5rem;
+}
+
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+.nav__link--current-page {
+    border-bottom: 3px solid var(--clr-accent);
+}
+
+/* CARDS -------------------------------------------------------- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 1120px;
+    margin: auto;
+}
+
+.card {
+    width:  340px;
+    height: 510px;
+    border: 1px solid var(--clr-shadow);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px var(--clr-shadow);
+    background-color: var(--clr-white);
+    background-size: cover;
+    display: flex;
+    padding: 1.5rem;
+}
+
+/* FOOTER ------------------------------------------------------- */
+.footer {
+    padding: 5rem 9rem;
+    background-color: var(--clr-bg);
+}
+
+.footer__container {
+    width: 1120px;
+    height: 85px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-/* FOOTER ------------------------------------------------------- */
+.footer__heading {
+    font-size: 1.7rem;
+    color: var(--clr-heading);
+    margin-bottom: 3rem;
+}
+
+.footer__subheading {
+    font-size: 0.8rem;
+    color: var(--clr-accent);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-variant: small-caps;
+    margin-bottom: 1.5rem;
+}
+
+.footer__text {
+    font-size: 1rem;
+}
+
+.footer__text-block {
+    display: inline;
+}

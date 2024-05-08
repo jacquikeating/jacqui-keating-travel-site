@@ -1,0 +1,47 @@
+/* MAIN --------------------------------------------------------- */
+.main {
+    position: relative;
+    padding: 7rem 9rem;
+}
+
+.main__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.main__title {
+    color: #FFF;
+    font-size: 5rem;
+    margin-bottom: 6rem;
+}
+
+
+
+/* CARDS -------------------------------------------------------- */
+.card {
+    flex-direction: column;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    text-align:  center;
+    border-bottom: 3px solid #000;
+    margin-bottom: 2.5rem;
+}
+
+.card__list {
+    list-style: none;
+    text-align: center;
+}
+
+.card__activity {
+    background-color: var(--clr-bg);
+    font-size: 1.3rem;
+    padding: 1em;
+    margin-bottom: 1.5rem;
+}

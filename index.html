@@ -29,22 +29,29 @@
             </nav>
         </header>
 
-        <main>
+        <main class="main">
             <section class="hero">
-                <h1 class="hero__headline">
-                    Travelling Comes With Endless Discoveries
-                </h1>
-                <p class="hero__subtitle">
-                    Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
-                </p>
-                <button class="hero__btn">
-                    <a class="btn__link" href="/pages/booking-form.html">Get started</a>
-                </button>
+                <div class="hero__text-container">
+                    <h1 class="hero__headline">
+                        Travelling Comes With Endless Discoveries
+                    </h1>
+                    <p class="hero__subtitle">
+                        Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
+                    </p>
+                    <a class="hero__btn-wrapper" href="/pages/booking-form.html">
+                        <button class="hero__btn">Get started</button>
+                    </a>
+                    <!-- <button class="hero__btn">
+                        <a class="btn__link" href="/pages/booking-form.html">Get started</a>
+                    </button> -->
+                </div>
+                <img class="hero__img" src="/assets/images/hero.png">
+                
             </section>
 
             <section class="recs">
                 <h2 class="recs__subheading">Recommendations</h2>
-                <div class="recs__cards-container">
+                <div class="cards-container">
 
                     <article class="card card--hawaii">
                         <p class="card__destination-name">Hawaii</p>
@@ -63,28 +70,43 @@
         </main>
 
         <footer class="footer">
-            <article class="footer__article">
-                <h2 class="footer__subheading">Contact</h2>
-                <h3 class="footer__sub-subheading">Email</h3>
-                <p class="footer__text">info@travelsite.com</p>
-            </article>
+            <div class="footer__container">
 
-            <article class="footer__article">
-                <h2 class="footer__subheading">Hours</h2>
-                <h3 class="footer__sub-subheading">Monday - Friday</h3>
-                <p class="footer__text">9:00 AM - 5:00 PM</p>
-                <h3 class="footer__sub-subheading">Saturday</h3>
-                <p class="footer__text">10:00 AM - 4:00 PM</p>
-                <h3 class="footer__sub-subheading">Sunday</h3>
-                <p class="footer__text">Closed</p>
-            </article>
+                <article class="footer__article">
+                    <h2 class="footer__heading">Contact</h2>
+                    <div class="footer__text-block">
+                        <h3 class="footer__subheading">Email</h3>
+                        <p class="footer__text">info@travelsite.com</p>
+                    </div>
+                </article>
+    
+                <article class="footer__article footer__article--hours">
+                    <h2 class="footer__heading">Hours</h2>
 
-            <article class="footer__article">
-                <h2 class="footer__subheading">Social</h2>
-                <img class="footer__social-icon" src="/assets/icons/icon-instagram.png">
-                <img class="footer__social-icon" src="/assets/icons/icon-facebook.png">
-                <img class="footer__social-icon" src="/assets/icons/icon-twitter.png">
-            </article>
+                    <div class="footer__text-block">
+                        <h3 class="footer__subheading">Monday - Friday</h3>
+                        <p class="footer__text">9:00 AM - 5:00 PM</p>
+                    </div>
+
+                    <div class="footer__text-block">
+                        <h3 class="footer__subheading">Saturday</h3>
+                        <p class="footer__text">10:00 AM - 4:00 PM</p>
+                    </div>
+
+                    <div class="footer__text-block">
+                        <h3 class="footer__subheading">Sunday</h3>
+                        <p class="footer__text">Closed</p>
+                    </div>
+                </article>
+    
+                <article class="footer__article">
+                    <h2 class="footer__heading">Social</h2>
+                    <img class="footer__social-icon" src="/assets/icons/icon-instagram.png">
+                    <img class="footer__social-icon" src="/assets/icons/icon-facebook.png">
+                    <img class="footer__social-icon" src="/assets/icons/icon-twitter.png">
+                </article>
+            </div>
+            
         </footer>
     </body>
 </html>
