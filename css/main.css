@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3.5rem;
-    width: 52rem;
+    width: 48rem;
 }
 
 .hero__headline {
@@ -21,7 +21,7 @@
 
 .hero__subtitle {
     color: var(--clr-heading);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .hero__btn {
@@ -41,12 +41,6 @@
     height: 475px;
 }
 
-/* .btn__link {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1rem;
-} */
-
 /* RECOMMENDATIONS ---------------------------------------------- */
 .recs {
     padding: 5rem 9rem 7rem 9rem;
@@ -63,6 +57,7 @@
 .card {
     justify-content: flex-end;
     align-items: flex-end;
+    text-decoration: none;
 }
 
 .card__destination-name {
