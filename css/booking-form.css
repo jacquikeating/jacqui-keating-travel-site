@@ -1,0 +1,37 @@
+.main {
+    padding: 3rem 9rem;
+}
+
+.main__title {
+    font-size: 3rem;
+    color: var(--clr-heading);
+}
+
+.booking-form {
+    /* margin: auto; */
+
+    width: 40%;
+    display: block;
+
+}
+
+.booking-form__label {
+    display: block;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    position: relative;
+    /* text-align: right; */
+}
+
+.booking-form__select,
+.booking-form__input,
+.booking-form__textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--clr-shadow);
+    position: absolute;
+    right: 0px;
+    font-size: 1.3rem;
+    width: 20rem;
+
+}

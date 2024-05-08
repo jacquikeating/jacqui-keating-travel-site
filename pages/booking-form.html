@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Travel Site</title>
         <link rel="stylesheet" href="/css/global.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/booking-form.css">
     </head>
 
     <body>
         <header class="header">
-            <p class="header__site-name">Travel Site</p>
+            <a class="header__site-name" href="/index.html">Travel Site</a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -29,12 +29,12 @@
             </nav>
         </header>
 
-        <main>
-            <h1 class="page-title">Start booking a trip</h1>
+        <main class="main">
+            <h1 class="main__title">Start booking a trip</h1>
 
            <form class="booking-form">
 
-                <label class="booking-form__label">
+                <label class="booking-form__label">Destination
                     <select class="booking-form__select" required>
                         <option class="booking-form__destination-option">Hawaii</option>
                         <option class="booking-form__destination-option">Iceland</option>
@@ -42,48 +42,70 @@
                     </select>
                 </label>
 
-                <label class="booking-form__label">
-                    <input class="booking-form__input" type="text" placeholder="Enter your name" required >
+                <label class="booking-form__label">Name
+                    <input class="booking-form__input" type="text" required >
                 </label>
 
-                <label class="booking-form__label">
-                    <input class="booking-form__input" type="email" placeholder="Enter your email address" required>
+                <label class="booking-form__label">Email
+                    <input class="booking-form__input" type="email" required>
                 </label>
 
-                <label class="booking-form__label">
-                    <input class="booking-form__input" type="text" placeholder="Enter your phone number" required>
+                <label class="booking-form__label">Phone Number
+                    <input class="booking-form__input" type="text" required>
                 </label>
 
-                <label class="booking-form__label">
-                    <textarea class="booking-form__textarea" placeholder="Enter a message (optional)"></textarea>
+                <label class="booking-form__label">Enter a message (optional)
+                    <textarea class="booking-form__textarea"></textarea>
                 </label>
 
            </form>
         </main>
 
         <footer class="footer">
-            <article class="footer__article">
-                <h2 class="footer__subheading">Contact</h2>
-                <h3 class="footer__sub-subheading">Email</h3>
-                <p class="footer__text">info@travelsite.com</p>
-            </article>
+            <div class="footer__container">
 
-            <article class="footer__article">
-                <h2 class="footer__subheading">Hours</h2>
-                <h3 class="footer__sub-subheading">Monday - Friday</h3>
-                <p class="footer__text">9:00 AM - 5:00 PM</p>
-                <h3 class="footer__sub-subheading">Saturday</h3>
-                <p class="footer__text">10:00 AM - 4:00 PM</p>
-                <h3 class="footer__sub-subheading">Sunday</h3>
-                <p class="footer__text">Closed</p>
-            </article>
-
-            <article class="footer__article">
-                <h2 class="footer__subheading">Social</h2>
-                <img class="footer__social-icon" src="/assets/icons/icon-instagram.png">
-                <img class="footer__social-icon" src="/assets/icons/icon-facebook.png">
-                <img class="footer__social-icon" src="/assets/icons/icon-twitter.png">
-            </article>
+                <article class="footer-section">
+                    <h2 class="footer-section__heading">Contact</h2>
+                    <div class="footer-section__content">
+                        <div class="footer-section__text-block">
+                            <h3 class="footer-section__subheading">Email</h3>
+                            <p class="footer-section__text">info@travelsite.com</p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="footer-section">
+                    <h2 class="footer-section__heading">Hours</h2>
+                    <div class="footer-section__content">
+                        <div class="footer-section__text-block">
+                            <h3 class="footer-section__subheading">Monday - Friday</h3>
+                            <p class="footer-section__text">9:00 AM - 5:00 PM</p>
+                        </div>
+    
+                        <div class="footer-section__text-block">
+                            <h3 class="footer-section__subheading">Saturday</h3>
+                            <p class="footer-section__text">10:00 AM - 4:00 PM</p>
+                        </div>
+    
+                        <div class="footer-section__text-block">
+                            <h3 class="footer-section__subheading">Sunday</h3>
+                            <p class="footer-section__text">Closed</p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="footer-section">
+                    <h2 class="footer-section__heading">Social</h2>
+                    <div class="footer-section__content">
+                        <a class="footer-section__link" href="https://www.instagram.com">
+                            <img class="footer-section__social-icon" src="/assets/icons/icon-instagram.png">
+                        </a>
+                        <a class="footer-section__link" href="https://www.facebook.com"><img class="footer-section__social-icon" src="/assets/icons/icon-facebook.png"></a>
+                        <a class="footer-section__link" href="https://www.twitter.com"><img class="footer-section__social-icon" src="/assets/icons/icon-twitter.png"></a>
+                    </div>
+                </article>
+                
+            </div>
         </footer>
     </body>
 </html>

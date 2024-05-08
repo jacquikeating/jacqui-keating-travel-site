@@ -25,6 +25,8 @@
 /* CARDS -------------------------------------------------------- */
 .card {
     background-color: var(--clr-white);
+    width: 250px;
+    height: 350px;
 }
 
 .card__title {

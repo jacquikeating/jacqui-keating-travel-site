@@ -1,5 +1,4 @@
 /* GLOBALS ------------------------------------------------------ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,20 +11,24 @@
     --clr-bg: #FEFAF5;
     --clr-white: #FFF;
     --clr-shadow: rgba(0,0,0,0.2);
+    font-size: 10px;
 }
 
 body {
     font-family: 'Verdana', sans-serif;
     background-color: var(--clr-white);
-    font-size: 10px;
 }
 
 
 /* HEADER ------------------------------------------------------- */
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 2rem 9rem;
+    background: var(--clr-white);
 }
 
 .header__site-name {
@@ -68,8 +71,8 @@ body {
 }
 
 .card {
-    width:  340px;
-    height: 510px;
+    width:  335px;
+    height: 505px;
     border: 1px solid var(--clr-shadow);
     border-radius: 5px;
     box-shadow: 0px 4px 4px var(--clr-shadow);
@@ -90,7 +93,7 @@ body {
 }
 
 .footer-section__heading {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     color: var(--clr-heading);
     margin-bottom: 3rem;
 }
@@ -103,7 +106,7 @@ body {
 }
 
 .footer-section__subheading {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--clr-accent);
     text-transform: uppercase;
     font-weight: normal;
@@ -112,7 +115,7 @@ body {
 }
 
 .footer-section__text {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .footer-section__social-icon {
